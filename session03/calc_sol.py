@@ -5,9 +5,9 @@ Exercise 2
 import math
 
 
-r = 5
-v = 4 / 3 * math.pi * r ** 3
-print(f"The volume of a sphere with radius 5 is {v:.2f}.")
+radius = 5
+volume = 4 / 3 * math.pi * radius ** 3
+print(f"The volume of a sphere with radius 5 is {volume:.2f}.")
 print()
 
 # exercise 2.2
@@ -29,6 +29,7 @@ easy_pace = (8 + 15 / 60) / 60
 tempo_pace = (7 + 12 / 60) / 60
 running_time = 2 * easy_pace + 3 * tempo_pace
 breakfast = start_time + running_time
+print(breakfast)
 breakfast_min = (breakfast - int(breakfast)) * 60
 breakfast_sec = (breakfast_min - int(breakfast_min)) * 60
 
@@ -45,7 +46,7 @@ print(f"The percentage of the increase is {percentage * 100:4.1f}%.")
 # or
 print(f"The percentage of the increase is {percentage:05.1%}.")
 
-rounded_perc = round(percentage * 100, 1)
-print(rounded_perc)
+# rounded_perc = round(percentage * 100, 1)
+# print(rounded_perc)
 
-print()
+# print()
