@@ -48,20 +48,25 @@
 
 # print('Naah, na na nanana naah, nanana naah, hey Jude. \n' * 10)
 
-pi = 3.1415926
+# pi = 3.1415926
 
-print(f'Pi equals {pi:.5f}.') 
-# before : -> variable
-# after : -> format
-print(f'Pi equals {pi:8.5f}.')
-print(f'Pi equals {pi:8.2f}.')
+# print(f'Pi equals {pi:.5f}.') 
+# # before : -> variable
+# # after : -> format
+# print(f'Pi equals {pi:8.5f}.')
+# print(f'Pi equals {pi:8.2f}.')
 
-# s1 = 'a'
-# s2 = 'ab'
-# s3 = 'abc'
-# s4 = 'abcd'
+s1 = 'a'
+s2 = 'abc';
+s3 = 'abcde';
+s4 = 'abcdefg'
 
-# print(f'{s1:>10}')
-# print(f'{s2:>10}')
-# print(f'{s3:>10}')
-# print(f'{s4:>10}')
+print(f'{s1:>10}')
+print(f'{s2:>10}')
+print(f'{s3:>10}')
+print(f'{s4:>10}')
+
+print(f'{s1:^11}')
+print(f'{s2:^11}')
+print(f'{s3:^11}')
+print(f'{s4:^11}Hi')

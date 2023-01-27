@@ -7,9 +7,9 @@ Exercise 2
 # exercise 2.1
 import math
 
-r = 5
-v = 4 / 3 * math.pi * r ** 3
-console.print(f"The volume of a sphere with radius 5 is {v:.2f}.\n", style='bold')
+radius = 5
+volume = 4 / 3 * math.pi * radius ** 3
+console.print(f"The volume of a sphere with radius 5 is {volume:.2f}.\n", style='bold')
 # console.print()
 
 # exercise 2.2

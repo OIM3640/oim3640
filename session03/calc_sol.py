@@ -29,7 +29,6 @@ easy_pace = (8 + 15 / 60) / 60
 tempo_pace = (7 + 12 / 60) / 60
 running_time = 2 * easy_pace + 3 * tempo_pace
 breakfast = start_time + running_time
-print(breakfast)
 breakfast_min = (breakfast - int(breakfast)) * 60
 breakfast_sec = (breakfast_min - int(breakfast_min)) * 60
 
