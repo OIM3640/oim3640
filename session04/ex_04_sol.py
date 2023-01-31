@@ -9,7 +9,7 @@ b = float(b)
 
 print(f'{a} + {b} = {a + b: 8.3f}')
 print(f'{a} - {b} = {a - b: 8.3f}')
-print(f'{a} * {b} = {a + b: 8.3f}')
+print(f'{a} * {b} = {a * b: 8.3f}')
 print(f'{a} / {b} = {a / b: 8.3f}')
 print(f'{a} ^ {b} = {a **b: 8.3f}')
 print()
