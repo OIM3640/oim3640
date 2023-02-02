@@ -84,7 +84,8 @@ def main():
         if isinstance(result, float):
             print(f'The solution is {result}.')
         else:
-            print(f'Two roots are {result[0]} and {result[1]}.')
+            root_1, root_2 = result
+            print(f'Two roots are {root_1:.2f} and {root_2:.2f}.')
     else:
         print('Sorry 😎')
 

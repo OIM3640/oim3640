@@ -20,10 +20,10 @@ def my_abs_4(number):
 
     number: an integer or a floating point number
     """
-    if number >= 0:
-        return number
-    else:
+    if number < 0:
         return -number
+    else:
+        return number
 
 
 # print(my_abs_4(-10))
@@ -35,7 +35,8 @@ def my_abs_5(number):
 
     number: an integer or a floating point number
 
-    Pseudocode:
+    Pseudocode - explain the algorithm used in this function using daily language
+
     1. if number's type is int or float:
         1.1. if the number is negative:
             return the opposite
@@ -44,10 +45,11 @@ def my_abs_5(number):
         return/raise an Error
     """
     if isinstance(number, (int, float)):
-        if number >= 0:
-            return number
-        else:
-            return -number
+        # if number < 0:
+        #     return -number
+        # else:
+        #     return number
+        return my_abs_4(number)
     else:
         print('I don\'t know how to solve this')
         return 'Wrong type of arguments'
@@ -55,6 +57,6 @@ def my_abs_5(number):
 
 
 print(my_abs_5(-10))
-print(my_abs_5('abc'))
+# print(my_abs_5('abc'))
 
-print('Hi')
+# print('Hi')
