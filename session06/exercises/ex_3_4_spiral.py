@@ -28,6 +28,7 @@ def draw_spiral(t, n, length=3, a=0.1, b=0.0002):
 def main():
     # create the world and t
     t = turtle.Turtle()
+    t.speed(0)
     draw_spiral(t, n=1000)
 
     turtle.Screen().mainloop()
