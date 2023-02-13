@@ -16,7 +16,7 @@ def countdown(n):
     if n <= 0:
         print('Blastoff!')
     else:
-        print(n)
+        print(n, end='\r')
         time.sleep(1)
         countdown(n - 1)
 

@@ -1,13 +1,15 @@
-def fibonacci(n):
-    """
-    1, 1, 2, 3, 5, 8, 13, ...
-
-    fibonacci(n) = fibonacci(n-1) + fibonacci(n-2)
-    """
-    if n == 1 or n == 2:
+def fib(n):
+    """Return the Nth Fibonacci number."""
+    if n == 0 or n == 1:
         return 1
-    return fibonacci(n-1) + fibonacci(n-2)
+    else:
+        return fib(n - 1) + fib(n - 2)
 
 
-for i in range(1, 10):
-    print(fibonacci(i))
+def main():
+    print(fib(5))
+    print(fib(2))
+
+
+if __name__ == "__main__":
+    main()

@@ -1,21 +1,19 @@
-"""
-Write a program, factorial.py to compute a factorial of an integer, n.
-"""
-
 def factorial(n):
-    """
-    Returns the factorial of n.
-
-    1! = 1
-    2! = 2 * 1
-       = 2 * 1!
-    3! = 3 * 2 * 1
-       = 3 * 2!
-
-    n! = n * (n-1)!
-    """
+    """Return the factorial of N"""
+    result = 1
     if n == 1:
-        return 1
-    return n * factorial(n-1)
+        return result
+    result = n * factorial(n - 1)
+    print("current n =", n)
+    print("current result =", result)
+    return result
 
-print(factorial(3))
+
+def main():
+    # print(factorial(1))
+    # print(factorial(3))
+    print(factorial(10))
+
+
+if __name__ == "__main__":
+    main()
