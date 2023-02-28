@@ -4,18 +4,18 @@ def rotate(word, n):
     return a new string that contains the letters from the original
     string, WORD, rotated by the given amount, N.
     """
-    new_string = ''
+    new_str = ''
     for c in word:
         if c.isalpha():
             if c.islower():
                 shift = (ord(c) - ord('a') + n) % 26
-                new_string += chr(ord('a') + shift)
+                new_str += chr(ord('a') + shift)
             else:
                 shift = (ord(c) - ord('A') + n) % 26
-                new_string += chr(ord('A') + shift)
+                new_str += chr(ord('A') + shift)
         else:
-            new_string += c
-    return new_string
+            new_str += c
+    return new_str
 
 
 def main():
