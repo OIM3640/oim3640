@@ -76,7 +76,7 @@ def find_words_no_e():
 
 
 perc_no_e = find_words_no_e()
-print(f'The percentage of the words with no "e" is {perc_no_e*100:.2f}%.')
+print(f'The percentage of the words with no "e" is {perc_no_e:.2%}.')
 
 
 def avoids(word, forbidden):
