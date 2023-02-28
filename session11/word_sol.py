@@ -182,11 +182,11 @@ def is_abecedarian(word):
     returns True if the letters in a word appear in alphabetical order
     (double letters are ok).
     """
-    left = word[0]
+    prev_letter = word[0]
     for letter in word:
-        if left > letter:
+        if prev_letter > letter:
             return False
-        left = letter
+        prev_letter = letter
     return True
 
 
@@ -197,15 +197,31 @@ def is_abecedarian(word):
 def find_abecedarian_words():
     """
     returns the number of abecedarian words
+
+    Try to find the longest abecedarian word?
+
+    Try to find the longest word in the following word list:
+
+    current_longest = 6
+    a, aa, aaaaa, aaa, aaaaaa, aaa, aaaa 
+    1  2   5      3    6       3    4
+
     """
     fin = open('data/words.txt')
     counter = 0
+    curr_longest = 0
+    curr_longest_word = ''
+
     for line in fin:
         word = line.strip()
         if is_abecedarian(word):
             # print(word)
+            if len(word) > curr_longest:
+                curr_longest = len(word)
+                curr_longest_word = word
             counter += 1
-    return counter
+    
+    return counter, curr_longest_word, curr_longest
 
 # print(find_abecedarian_words())
 
@@ -243,7 +259,8 @@ def is_abecedarian_using_while(word):
 
 
 def main():
-    find_long_words()
+    """"""
+    # find_long_words()
 
 
 if __name__ == "__main__":
