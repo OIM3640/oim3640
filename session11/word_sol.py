@@ -200,17 +200,12 @@ def find_abecedarian_words():
     """
     fin = open('data/words.txt')
     counter = 0
-    current_longest_word = ''
     for line in fin:
         word = line.strip()
         if is_abecedarian(word):
             # print(word)
             counter += 1
-            if len(word) > len(current_longest_word):
-                current_longest_word = word
-
-    return counter, current_longest_word
-
+    return counter
 
 # print(find_abecedarian_words())
 
