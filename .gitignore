@@ -152,3 +152,4 @@ cython_debug/
 #.idea/
 test.py
 session13/config.py
+quiz/*.*
