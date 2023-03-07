@@ -13,14 +13,13 @@ with urllib.request.urlopen(url) as f:
     # print(type(data))
     pprint.pprint(data)
 
-# Can you print number of people in the space?
+# Can you print the number of people in the space?
 print(data['number'])
 
-# Can you print all the names?
-# print(data['people'][0]['name'])
+# Can you print all the people's names?
 
-astronauts = data['people']  # this is a list
-for astronaut in astronauts:
-    name = astronaut['name']
-    craft = astronaut['craft']
-    print(f'{name} in {craft}')
+people = data['people']
+# print(type(people))
+for person in people:
+    # print(type(person))
+    print(person['name'], person['craft'])
