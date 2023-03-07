@@ -34,7 +34,7 @@ def ratio(first_name: str) -> float:
     for line in f:
         word = line.strip()  # get rid of the '\n' in the end of each line
         # word = line
-        if len(word) == len(first_name)+1 and word[0] == first_name.lower()[0]:
+        if len(word) == len(first_name) and word[0] == first_name.lower()[0]:
             count_friendly += 1
             print(word)
         count_total += 1
