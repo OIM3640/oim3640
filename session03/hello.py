@@ -45,11 +45,27 @@
 
 # print("Naah, na na nanana naah, nanana naah, hey Jude. \n" * 10)
 
-name = "world"
-print(f"Hello, {name}!")  # : formatting specifier
+# name = "world"
+# print(f"Hello, {name}!")  # : formatting specifier
 
-pi = 3.1415926  # this is a floating point number
+# pi = 3.1415926  # this is a floating point number
 
-print(f"Pi equals {pi:.5f}.")
-print(f"Pi equals {pi:8.5f}.")
-print(f"Pi equals {pi:8.2f}.")
+# print(f"Pi equals {pi:.5f}.")
+# print(f"Pi equals {pi:8.5f}.")
+# print(f"Pi equals {pi:8.2f}.")
+
+
+s1 = "a"
+s2 = "ab"
+s3 = "abc"
+s4 = "abcd"
+
+# print(f"|{s1:>10}|")
+# print(f"|{s2:>10}|")
+# print(f"|{s3:>10}|")
+print(f"|{s4:>10}|")
+print(f"|{s4:<10}|")
+print(f"|{s4:^10}|")
+
+
+# TODO: Add more examples of f-string
