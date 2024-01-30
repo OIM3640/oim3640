@@ -18,10 +18,11 @@ def compute_area(radius):
     pi = 3.14
 
     # radius is parameter variable; we should treat it as given inside of the funciton
-
     area = pi * radius * radius
+
     # print(area)
     # if the function does not explicitly return any value, it will return None
+
     return area
 
 
@@ -47,4 +48,5 @@ def add(a, b):
 total = add(area1, area2)
 print(total)
 
-print(add("Hi,", "world!"))
+print(add("Hello,", "world!"))
+# Python is very flexible... Google or Ask ChatGPT about "duck typing"
