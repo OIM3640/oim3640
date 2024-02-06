@@ -2,7 +2,6 @@
 
 import time
 
-
 print(time.time())
 
 current = time.time()

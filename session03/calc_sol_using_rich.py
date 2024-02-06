@@ -1,3 +1,5 @@
+import math
+
 from rich.console import Console
 
 console = Console()
@@ -5,11 +7,10 @@ console = Console()
 Exercise 2
 """
 # exercise 2.1
-import math
 
 radius = 5
-volume = 4 / 3 * math.pi * radius ** 3
-console.print(f"The volume of a sphere with radius 5 is {volume:.2f}.\n", style='bold')
+volume = 4 / 3 * math.pi * radius**3
+console.print(f"The volume of a sphere with radius 5 is {volume:.2f}.\n", style="bold")
 # console.print()
 
 # exercise 2.2
