@@ -1,7 +1,7 @@
 def check(score):
     if score >= 60:
         print("Pass")
-        return  # immediately end this function
+        return  # `return`immediately end this function
     if score >= 90:
         print("A")
     else:

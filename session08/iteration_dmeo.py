@@ -26,6 +26,7 @@
 
 
 def sum_up_100():
+    """calculate the sum of all the integers from 0 to 100"""
     total = 0
 
     for i in range(101):
@@ -60,6 +61,9 @@ print(sum_up(100))
 
 
 def sum_up_while(n):
+    """
+    takes an argument, n, and calculate the sum of all the integers from 1 to n using while loop
+    """
     total = 0
 
     i = 0
