@@ -23,7 +23,7 @@ def find_long_words():
     """
     prints only the words with more than 20 characters
     """
-    f = open('data/words.txt')  # Assume words.txt is under data folder
+    f = open("data/words.txt")  # Assume words.txt is under data folder
 
     for line in f:
         word = line.strip()
@@ -43,7 +43,7 @@ def has_no_e(word):
     #         return False
     # return True
 
-    return 'e' not in word.lower()
+    return "e" not in word.lower()
 
 
 # print(has_no_e('Babson'))
@@ -99,7 +99,7 @@ def find_words_no_vowels():
     for line in f:
         num_of_words += 1
         word = line.strip()
-        if avoids(word, 'aeiou'):
+        if avoids(word, "aeiou"):
             # print(word)
             num_words_no_vowel += 1
     return num_words_no_vowel / num_of_words
@@ -126,11 +126,11 @@ def uses_only(word, available):
 
 def find_words_only_use_planet():
     """"""
-    f = open('data/words.txt')
+    f = open("data/words.txt")
     num_words_only_use_planet = 0
     for line in f:
         word = line.strip()
-        if uses_only(word, 'planet'):
+        if uses_only(word, "planet"):
             num_words_only_use_planet += 1
             print(word)
     return num_words_only_use_planet
@@ -166,11 +166,11 @@ def find_words_using_all_vowels():
     """
     return the number of the words that use all the vowel letters
     """
-    f = open('data/words.txt')
+    f = open("data/words.txt")
     num_words_use_all_vowels = 0
     for line in f:
         word = line.strip()
-        if uses_all(word, 'aeiou'):
+        if uses_all(word, "aeiou"):
             num_words_use_all_vowels += 1
             print(word)
     return num_words_use_all_vowels
@@ -200,7 +200,7 @@ def find_abecedarian_words():
     """
     returns the number of abecedarian words
     """
-    fin = open('data/words.txt')
+    fin = open("data/words.txt")
     counter = 0
     for line in fin:
         word = line.strip()

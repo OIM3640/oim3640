@@ -4,7 +4,7 @@ from word_sol import uses_only
 
 
 def spell_bee(must, available):
-    f = open('data/words.txt')
+    f = open("data/words.txt")
     for line in f:
         word = line.strip()
         # if the word has 4 or more letters and contains the center/required letter and uses only the available letters
