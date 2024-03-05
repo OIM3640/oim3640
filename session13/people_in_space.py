@@ -14,6 +14,10 @@ with urllib.request.urlopen(url) as f:
     pprint.pprint(data)
 
 # Can you print number of people in the space?
+# print(data['number'])
 
+print(len(data['people'])) # because the value to key 'people' is a list
 
 # Can you print all the names?
+for astronaut in data['people']:
+    print(astronaut['name']) # the type of astronaut is dict
