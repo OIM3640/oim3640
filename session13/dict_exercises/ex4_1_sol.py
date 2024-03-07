@@ -36,20 +36,23 @@ def main():
     word_dict = create_dict()
     word_list = create_list()
 
-    word_to_check = input('Enter a word:')
+    word_to_check = input("Enter a word:")
 
-    start = time.time()
-    if check_in_container(word_to_check, word_dict):
-        print('Yes')
+    start1 = time.time()
+    for _ in range(1000):
+        if check_in_container(word_to_check, word_dict):
+            pass
     end1 = time.time()
-    duration_dict = end1 - start
-    print(f'Checking in dict takes {duration_dict}s.')
+    duration_dict = end1 - start1
+    print(f"Time taken to search in a dict: {duration_dict}s.")
 
-    if check_in_container(word_to_check, word_list):
-        print('Yes')
+    start2 = time.time()
+    for _ in range(1000):
+        if check_in_container(word_to_check, word_list):
+            pass
     end2 = time.time()
-    duration_list = end2 - end1
-    print(f'Checking in list takes {duration_list}s.')
+    duration_list = end2 - start2
+    print(f"Time taken to search in a dict: {duration_list}s.")
 
 
 if __name__ == "__main__":
