@@ -1,4 +1,6 @@
-from flask import Flask
+from flask import Flask, render_template, request
+
+from weather import get_temp
 
 app = Flask(__name__)
 
@@ -9,7 +11,7 @@ app = Flask(__name__)
 @app.route("/hello/<name>")
 def hello(name=None):
     if name is not None:
-        return f"Hello, {name}!"
+        return render_template("index.html", username=name)
     return "Hello, world!"
 
 
@@ -21,6 +23,18 @@ def square(number=None):
     if number is not None:
         return f"{number} ^ 2 = {number ** 2}"
     return "You should prove a number after"
+
+
+@app.get("/temp/")
+def temp_get():
+    return render_template("weather-form.html")
+
+
+@app.post("/temp/")
+def temp_post():
+    city_name = request.form["city"]
+    temperature = get_temp(city_name)
+    return render_template("weather-result.html", city=city_name, temp=temperature)
 
 
 if __name__ == "__main__":
