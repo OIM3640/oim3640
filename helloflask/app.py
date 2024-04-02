@@ -1,4 +1,4 @@
-from flask import Flask, redirect, render_template, request
+from flask import Flask, redirect, render_template, request, url_for
 from weather import get_temp
 
 app = Flask(__name__)
@@ -70,6 +70,7 @@ def post_register():
     if course not in COURSES:
         return "Get out of here, Moises/hacker!"
     STUDENTS[name] = course
+    # return "Successfully registered!"
     return redirect("/students/")
 
 
