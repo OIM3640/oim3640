@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        div{
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Course Registration</h1>
+    <form action="" method="post">
+        <div>
+            <input type="text" name="fullname" placeholder="Name">
+        </div>
+        <!-- <select name="course">
+            <option value="Python">Python</option>
+            <option value="Web">Web</option>
+            <option value="Blockchain">Blockchain</option>
+        </select> -->
+        <!-- <label><input type="radio" name="course" value="Python">Python</label>
+        <label><input type="radio" name="course" value="Web">Web</label>
+        <label><input type="radio" name="course" value="Blockchain">Blockchain</label> -->
+        <div>
+            {% for course in courses %}
+            <label><input type="radio" name="course" value="{{ course }}">{{ course }}</label>
+            {% endfor %}
+        </div>
+        <div>
+            <button>Register</button>
+        </div>
+    </form>
+</body>
+
+</html>
