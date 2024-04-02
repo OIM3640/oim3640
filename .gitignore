@@ -154,4 +154,5 @@ cython_debug/
 
 quiz/*.*
 temp.py
-session13/config.py
+# session13/config.py
+*/config.py
