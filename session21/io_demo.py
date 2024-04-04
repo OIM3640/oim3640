@@ -55,6 +55,13 @@ cwd = os.getcwd()
 
 # print(os.listdir(cwd))
 
+session21_folder = os.path.join(cwd, "session21")
+
+for filename in os.listdir(session21_folder):
+    if filename.endswith("_demo.py"):
+        # print(filename)
+        print(os.path.join(session21_folder, filename))
+
 """
 Pickling
 """
