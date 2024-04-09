@@ -1,0 +1,251 @@
+rank,title,year,length,rating,votes
+1,The Shawshank Redemption,1994,2h 22m,9.3,2.9M
+2,The Godfather,1972,2h 55m,9.2,2M
+3,The Dark Knight,2008,2h 32m,9.0,2.9M
+4,The Godfather Part II,1974,3h 22m,9.0,1.4M
+5,12 Angry Men,1957,1h 36m,9.0,862K
+6,Schindler's List,1993,3h 15m,9.0,1.4M
+7,The Lord of the Rings: The Return of the King,2003,3h 21m,9.0,2M
+8,Pulp Fiction,1994,2h 34m,8.9,2.2M
+9,The Lord of the Rings: The Fellowship of the Ring,2001,2h 58m,8.9,2M
+10,"The Good, the Bad and the Ugly",1966,2h 58m,8.8,809K
+11,Forrest Gump,1994,2h 22m,8.8,2.3M
+12,The Lord of the Rings: The Two Towers,2002,2h 59m,8.8,1.8M
+13,Fight Club,1999,2h 19m,8.8,2.3M
+14,Inception,2010,2h 28m,8.8,2.5M
+15,Star Wars: Episode V - The Empire Strikes Back,1980,2h 4m,8.7,1.4M
+16,Dune: Part Two,2024,2h 46m,8.8,320K
+17,The Matrix,1999,2h 16m,8.7,2M
+18,Goodfellas,1990,2h 25m,8.7,1.3M
+19,One Flew Over the Cuckoo's Nest,1975,2h 13m,8.7,1.1M
+20,Se7en,1995,2h 7m,8.6,1.8M
+21,Interstellar,2014,2h 49m,8.7,2.1M
+22,It's a Wonderful Life,1946,2h 10m,8.6,498K
+23,Seven Samurai,1954,3h 27m,8.6,366K
+24,The Silence of the Lambs,1991,1h 58m,8.6,1.5M
+25,Saving Private Ryan,1998,2h 49m,8.6,1.5M
+26,City of God,2002,2h 10m,8.6,799K
+27,Life Is Beautiful,1997,1h 56m,8.6,742K
+28,The Green Mile,1999,3h 9m,8.6,1.4M
+29,Terminator 2: Judgment Day,1991,2h 17m,8.6,1.2M
+30,Star Wars: Episode IV - A New Hope,1977,2h 1m,8.6,1.4M
+31,Back to the Future,1985,1h 56m,8.5,1.3M
+32,Spirited Away,2001,2h 5m,8.6,846K
+33,The Pianist,2002,2h 30m,8.5,909K
+34,Parasite,2019,2h 12m,8.5,954K
+35,Psycho,1960,1h 49m,8.5,717K
+36,Spider-Man: Across the Spider-Verse,2023,2h 20m,8.6,364K
+37,Gladiator,2000,2h 35m,8.5,1.6M
+38,The Lion King,1994,1h 28m,8.5,1.1M
+39,Léon: The Professional,1994,1h 50m,8.5,1.2M
+40,The Departed,2006,2h 31m,8.5,1.4M
+41,American History X,1998,1h 59m,8.5,1.2M
+42,Whiplash,2014,1h 46m,8.5,985K
+43,The Prestige,2006,2h 10m,8.5,1.4M
+44,Grave of the Fireflies,1988,1h 29m,8.5,309K
+45,Harakiri,1962,2h 13m,8.6,68K
+46,The Usual Suspects,1995,1h 46m,8.5,1.1M
+47,Casablanca,1942,1h 42m,8.5,605K
+48,The Intouchables,2011,1h 52m,8.5,927K
+49,Cinema Paradiso,1988,2h 54m,8.5,282K
+50,Modern Times,1936,1h 27m,8.5,259K
+51,Rear Window,1954,1h 52m,8.5,521K
+52,Once Upon a Time in the West,1968,2h 46m,8.5,349K
+53,Alien,1979,1h 57m,8.5,948K
+54,City Lights,1931,1h 27m,8.5,196K
+55,Apocalypse Now,1979,2h 27m,8.4,709K
+56,Django Unchained,2012,2h 45m,8.5,1.7M
+57,Memento,2000,1h 53m,8.4,1.3M
+58,12th Fail,2023,2h 27m,9.0,109K
+59,WALL·E,2008,1h 38m,8.4,1.2M
+60,Raiders of the Lost Ark,1981,1h 55m,8.4,1M
+61,The Lives of Others,2006,2h 17m,8.4,409K
+62,Sunset Blvd.,1950,1h 50m,8.4,236K
+63,Paths of Glory,1957,1h 28m,8.4,212K
+64,Avengers: Infinity War,2018,2h 29m,8.4,1.2M
+65,Spider-Man: Into the Spider-Verse,2018,1h 57m,8.4,668K
+66,Witness for the Prosecution,1957,1h 56m,8.4,137K
+67,The Shining,1980,2h 26m,8.4,1.1M
+68,The Great Dictator,1940,2h 5m,8.4,237K
+69,Aliens,1986,2h 17m,8.4,761K
+70,Inglourious Basterds,2009,2h 33m,8.4,1.6M
+71,The Dark Knight Rises,2012,2h 44m,8.4,1.8M
+72,Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,1964,1h 35m,8.4,517K
+73,American Beauty,1999,2h 2m,8.3,1.2M
+74,Oldboy,2003,2h,8.3,634K
+75,Coco,2017,1h 45m,8.4,588K
+76,Amadeus,1984,2h 40m,8.4,427K
+77,Toy Story,1995,1h 21m,8.3,1.1M
+78,Das Boot,1981,2h 29m,8.4,264K
+79,Braveheart,1995,2h 58m,8.3,1.1M
+80,Avengers: Endgame,2019,3h 1m,8.4,1.3M
+81,Joker,2019,2h 2m,8.4,1.5M
+82,Princess Mononoke,1997,2h 14m,8.3,433K
+83,Good Will Hunting,1997,2h 6m,8.3,1.1M
+84,Your Name.,2016,1h 46m,8.4,318K
+85,Once Upon a Time in America,1984,3h 49m,8.3,377K
+86,High and Low,1963,2h 23m,8.4,53K
+87,3 Idiots,2009,2h 50m,8.4,433K
+88,Singin' in the Rain,1952,1h 43m,8.3,260K
+89,Capernaum,2018,2h 6m,8.4,105K
+90,Requiem for a Dream,2000,1h 42m,8.3,897K
+91,Come and See,1985,2h 22m,8.4,97K
+92,Oppenheimer,2023,3h,8.3,711K
+93,Toy Story 3,2010,1h 43m,8.3,891K
+94,Star Wars: Episode VI - Return of the Jedi,1983,2h 11m,8.3,1.1M
+95,Eternal Sunshine of the Spotless Mind,2004,1h 48m,8.3,1.1M
+96,The Hunt,2012,1h 55m,8.3,363K
+97,2001: A Space Odyssey,1968,2h 29m,8.3,718K
+98,Reservoir Dogs,1992,1h 39m,8.3,1.1M
+99,Ikiru,1952,2h 23m,8.3,87K
+100,Lawrence of Arabia,1962,3h 38m,8.3,314K
+101,The Apartment,1960,2h 5m,8.3,196K
+102,North by Northwest,1959,2h 16m,8.3,345K
+103,Citizen Kane,1941,1h 59m,8.3,465K
+104,Incendies,2010,2h 11m,8.3,199K
+105,Vertigo,1958,2h 8m,8.3,426K
+106,M,1931,1h 39m,8.3,168K
+107,Double Indemnity,1944,1h 47m,8.3,167K
+108,Scarface,1983,2h 50m,8.3,914K
+109,Amélie,2001,2h 2m,8.3,793K
+110,Full Metal Jacket,1987,1h 56m,8.3,789K
+111,Heat,1995,2h 50m,8.3,718K
+112,A Clockwork Orange,1971,2h 16m,8.3,880K
+113,Up,2009,1h 36m,8.3,1.1M
+114,To Kill a Mockingbird,1962,2h 9m,8.3,332K
+115,The Sting,1973,2h 9m,8.3,279K
+116,A Separation,2011,2h 3m,8.3,258K
+117,Indiana Jones and the Last Crusade,1989,2h 7m,8.2,810K
+118,Die Hard,1988,2h 12m,8.2,943K
+119,Metropolis,1927,2h 33m,8.3,185K
+120,Like Stars on Earth,2007,2h 42m,8.3,206K
+121,Hamilton,2020,2h 40m,8.3,113K
+122,Snatch,2000,1h 42m,8.2,909K
+123,L.A. Confidential,1997,2h 18m,8.2,617K
+124,1917,2019,1h 59m,8.2,673K
+125,Bicycle Thieves,1948,1h 29m,8.3,175K
+126,Taxi Driver,1976,1h 54m,8.2,918K
+127,Downfall,2004,2h 36m,8.2,375K
+128,Dangal,2016,2h 41m,8.3,210K
+129,For a Few Dollars More,1965,2h 12m,8.2,274K
+130,Batman Begins,2005,2h 20m,8.2,1.6M
+131,The Wolf of Wall Street,2013,3h,8.2,1.6M
+132,Some Like It Hot,1959,2h 1m,8.2,283K
+133,Green Book,2018,2h 10m,8.2,568K
+134,The Kid,1921,1h 8m,8.2,135K
+135,The Father,2020,1h 37m,8.2,192K
+136,Judgment at Nuremberg,1961,2h 59m,8.3,85K
+137,All About Eve,1950,2h 18m,8.2,139K
+138,The Truman Show,1998,1h 43m,8.2,1.2M
+139,Top Gun: Maverick,2022,2h 10m,8.2,692K
+140,Shutter Island,2010,2h 18m,8.2,1.5M
+141,There Will Be Blood,2007,2h 38m,8.2,640K
+142,Casino,1995,2h 58m,8.2,563K
+143,Ran,1985,2h 40m,8.2,136K
+144,Jurassic Park,1993,2h 7m,8.2,1.1M
+145,The Sixth Sense,1999,1h 47m,8.2,1M
+146,Pan's Labyrinth,2006,1h 58m,8.2,702K
+147,Unforgiven,1992,2h 10m,8.2,435K
+148,No Country for Old Men,2007,2h 2m,8.2,1.1M
+149,A Beautiful Mind,2001,2h 15m,8.2,985K
+150,The Thing,1982,1h 49m,8.2,465K
+151,The Treasure of the Sierra Madre,1948,2h 6m,8.2,132K
+152,Kill Bill: Vol. 1,2003,1h 51m,8.2,1.2M
+153,Yojimbo,1961,1h 50m,8.2,131K
+154,Monty Python and the Holy Grail,1975,1h 31m,8.2,569K
+155,The Great Escape,1963,2h 52m,8.2,258K
+156,Finding Nemo,2003,1h 40m,8.2,1.1M
+157,Rashomon,1950,1h 28m,8.2,180K
+158,Prisoners,2013,2h 33m,8.2,807K
+159,Howl's Moving Castle,2004,1h 59m,8.2,447K
+160,The Elephant Man,1980,2h 4m,8.2,258K
+161,Chinatown,1974,2h 10m,8.1,349K
+162,Dial M for Murder,1954,1h 45m,8.2,188K
+163,Gone with the Wind,1939,3h 58m,8.2,334K
+164,V for Vendetta,2005,2h 12m,8.2,1.2M
+165,"Lock, Stock and Two Smoking Barrels",1998,1h 47m,8.1,615K
+166,The Secret in Their Eyes,2009,2h 9m,8.2,222K
+167,Inside Out,2015,1h 35m,8.1,783K
+168,Raging Bull,1980,2h 9m,8.1,379K
+169,"Three Billboards Outside Ebbing, Missouri",2017,1h 55m,8.1,554K
+170,Trainspotting,1996,1h 33m,8.1,724K
+171,The Bridge on the River Kwai,1957,2h 41m,8.1,233K
+172,Spider-Man: No Way Home,2021,2h 28m,8.2,875K
+173,Fargo,1996,1h 38m,8.1,725K
+174,Klaus,2019,1h 36m,8.2,189K
+175,Catch Me If You Can,2002,2h 21m,8.1,1.1M
+176,Warrior,2011,2h 20m,8.1,497K
+177,Godzilla Minus One,2023,2h 4m,8.3,48K
+178,Gran Torino,2008,1h 56m,8.1,814K
+179,My Neighbor Totoro,1988,1h 26m,8.1,379K
+180,Million Dollar Baby,2004,2h 12m,8.1,721K
+181,Harry Potter and the Deathly Hallows: Part 2,2011,2h 10m,8.1,946K
+182,Children of Heaven,1997,1h 29m,8.2,81K
+183,12 Years a Slave,2013,2h 14m,8.1,740K
+184,Blade Runner,1982,1h 57m,8.1,822K
+185,Before Sunrise,1995,1h 41m,8.1,338K
+186,Ben-Hur,1959,3h 32m,8.1,253K
+187,The Grand Budapest Hotel,2014,1h 39m,8.1,885K
+188,Barry Lyndon,1975,3h 5m,8.1,183K
+189,Gone Girl,2014,2h 29m,8.1,1.1M
+190,Hacksaw Ridge,2016,2h 19m,8.1,592K
+191,The Gold Rush,1925,1h 35m,8.1,118K
+192,Memories of Murder,2003,2h 12m,8.1,215K
+193,In the Name of the Father,1993,2h 13m,8.1,187K
+194,Dead Poets Society,1989,2h 8m,8.1,544K
+195,On the Waterfront,1954,1h 48m,8.1,164K
+196,The General,1926,1h 18m,8.1,98K
+197,The Deer Hunter,1978,3h 3m,8.1,362K
+198,Wild Tales,2014,2h 2m,8.1,216K
+199,Mad Max: Fury Road,2015,2h,8.1,1.1M
+200,"Monsters, Inc.",2001,1h 32m,8.1,977K
+201,Sherlock Jr.,1924,45m,8.2,57K
+202,The Third Man,1949,1h 33m,8.1,182K
+203,Wild Strawberries,1957,1h 31m,8.1,115K
+204,The Wages of Fear,1953,2h 11m,8.2,66K
+205,Jaws,1975,2h 4m,8.1,658K
+206,How to Train Your Dragon,2010,1h 38m,8.1,798K
+207,Mary and Max,2009,1h 32m,8.1,187K
+208,Mr. Smith Goes to Washington,1939,2h 9m,8.1,121K
+209,Ratatouille,2007,1h 51m,8.1,822K
+210,Ford v Ferrari,2019,2h 32m,8.1,471K
+211,The Big Lebowski,1998,1h 57m,8.1,859K
+212,Tokyo Story,1953,2h 16m,8.1,68K
+213,Room,2015,1h 58m,8.1,449K
+214,The Seventh Seal,1957,1h 36m,8.1,198K
+215,Rocky,1976,2h,8.1,627K
+216,Logan,2017,2h 17m,8.1,829K
+217,Spotlight,2015,2h 9m,8.1,501K
+218,Hotel Rwanda,2004,2h 1m,8.1,372K
+219,Platoon,1986,2h,8.1,439K
+220,The Terminator,1984,1h 47m,8.1,922K
+221,The Passion of Joan of Arc,1928,1h 54m,8.1,61K
+222,Before Sunset,2004,1h 20m,8.1,287K
+223,La haine,1995,1h 38m,8.1,196K
+224,The Best Years of Our Lives,1946,2h 50m,8.1,70K
+225,Pirates of the Caribbean: The Curse of the Black Pearl,2003,2h 23m,8.1,1.2M
+226,The Exorcist,1973,2h 2m,8.1,454K
+227,Rush,2013,2h 3m,8.1,512K
+228,Jai Bhim,2021,2h 44m,8.7,217K
+229,Network,1976,2h 1m,8.1,170K
+230,Stand by Me,1986,1h 29m,8.1,441K
+231,The Wizard of Oz,1939,1h 42m,8.1,428K
+232,The Incredibles,2004,1h 55m,8.0,807K
+233,Hachi: A Dog's Tale,2009,1h 33m,8.1,311K
+234,The Handmaiden,2016,2h 25m,8.1,172K
+235,Into the Wild,2007,2h 28m,8.1,657K
+236,My Father and My Son,2005,1h 52m,8.2,92K
+237,The Sound of Music,1965,2h 52m,8.1,260K
+238,The Battle of Algiers,1966,2h 1m,8.1,66K
+239,The Grapes of Wrath,1940,2h 9m,8.1,100K
+240,To Be or Not to Be,1942,1h 39m,8.1,43K
+241,Groundhog Day,1993,1h 41m,8.0,684K
+242,Amores Perros,2000,2h 34m,8.1,253K
+243,Rebecca,1940,2h 10m,8.1,146K
+244,Cool Hand Luke,1967,2h 7m,8.1,188K
+245,The Iron Giant,1999,1h 26m,8.1,227K
+246,The Help,2011,2h 26m,8.1,492K
+247,It Happened One Night,1934,1h 45m,8.1,112K
+248,Dances with Wolves,1990,3h 1m,8.0,290K
+249,Aladdin,1992,1h 30m,8.0,465K
+250,Andhadhun,2018,2h 19m,8.2,102K

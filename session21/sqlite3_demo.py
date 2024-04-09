@@ -38,7 +38,7 @@ def display_expensive_stocks(price):
 
 def main():
     """"""
-    create_portfolio_table()
+    # create_portfolio_table()
 
     # stocks = [
     #     ("AAPL", 50, 189.03),
@@ -52,9 +52,9 @@ def main():
 
     # display_portfolio()
 
-    # print("\nExpensive Stocks:")
-    # min_price = 300
-    # display_expensive_stocks(min_price)
+    print("\nExpensive Stocks:")
+    min_price = 300
+    display_expensive_stocks(min_price)
 
 
 if __name__ == "__main__":
