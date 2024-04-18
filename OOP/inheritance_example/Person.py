@@ -25,6 +25,7 @@ class Person:
         if self.last_name == other.last_name:
             return self.name < other.name
         return self.last_name < other.last_name
+        
 
     # other methods
 

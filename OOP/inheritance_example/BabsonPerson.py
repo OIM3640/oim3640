@@ -31,13 +31,17 @@ def main():
     p1 = BabsonPerson("Zhi Li")
     p2 = BabsonPerson("Javieer Nalwa")
     p3 = BabsonPerson("Jade Liang")
+    print(p1.id)
+    print(p2.id)
+    print(p3.id)
+
     p4 = Person("Donald Trump")
 
-    print(p4.id)
+    # print(p4.id)
 
     print(p2.speak("I feel great today"))
 
-    print(p4.speak("Nobody understands how I'm feeling right now better than myself!"))
+    # print(p4.speak("Nobody understands how I'm feeling right now better than myself!"))
 
 
 if __name__ == "__main__":

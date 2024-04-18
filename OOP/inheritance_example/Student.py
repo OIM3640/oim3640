@@ -48,7 +48,7 @@ def main():
 
     print(s1)
 
-    print(s1.get_class_year())
+    # print(s1.get_class_year())
     # print(s1.year)
 
     print(s2.speak("Where is the quiz?"))
