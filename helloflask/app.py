@@ -1,5 +1,5 @@
+import weather
 from flask import Flask, render_template, request
-from weather import get_temp
 
 app = Flask(__name__)
 
@@ -48,7 +48,7 @@ def square(number=None):
 @app.route("/weather/<city>")
 def weather(city=None):
     """Returns the current temperature in the given city."""
-    temp = get_temp(city)
+    temp = weather.get_temp(city)
     return f"{temp}°C"
 
 
@@ -62,7 +62,7 @@ def get_weather():
 def post_weather():
     """Displays the current temperature in the city provided by the user after submitting the form."""
     city_name = request.form["city"]
-    result = get_temp(city_name)
+    result = weather.get_temp(city_name)
     return render_template("weather-result.html", temp=result, city=city_name.title())
 
 

@@ -27,4 +27,9 @@ def get_temp(city):
     return temp
 
 
-# get_weather("New York")
+def main():
+    print(get_temp("New York"))
+
+
+if __name__ == "__main__":
+    main()
