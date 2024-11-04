@@ -1,4 +1,5 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
+from weather import get_temp
 
 app = Flask(__name__)
 
@@ -17,7 +18,7 @@ def index():
 def hello(name=None):
     if name is not None:
         # return f'<h1 style="color:red">Hello, {name}!</h1><p style="color:blue">I am also excited to learn Flask.</p>'
-        return render_template("hello.html", name=name)
+        return render_template("hello.html", username=name)
     return "Hello world!"
 
 
@@ -39,6 +40,26 @@ def square(number=None):
 
 # Task: Create a route that returns weather information for a specific location.
 # Example: '/weather/Wellesley' could return current weather details for Wellesley.
+
+
+@app.route("/weather/<city>")
+def weather(city=None):
+    """"""
+    temp = get_temp(city)
+    return f"{temp}°C"
+
+
+@app.get("/weather")
+def get_weather():
+    return render_template("weather-form.html")
+
+
+@app.post("/weather")
+def post_weather():
+    city_name = request.form["city"]
+    result = get_temp(city_name)
+    return render_template("weather-result.html", temp=result, city=city_name.title())
+
 
 if __name__ == "__main__":
     app.run(debug=True)

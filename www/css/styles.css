@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: red;
+    background-color: blue;
+}
+
+p {
+    color: blue;
+}
+
+p.william {
+    font-size: x-large;
+    font-family: "Courier New", Courier, monospace;
+}
+
+a:hover {
+    background-color: beige;
+}
+
+.first-div {
+    background-color: lightblue;
+    padding: 5px;
+}
