@@ -8,6 +8,7 @@ app = Flask(__name__)
 # Example: Visiting http://www.xyz.com/ will trigger this function.
 @app.route("/")
 def index():
+    """Returns the homepage message."""
     return "This is the homepage. I am excited to learn Flask."
 
 
@@ -16,6 +17,7 @@ def index():
 @app.route("/hello")
 @app.route("/hello/<name>")
 def hello(name=None):
+    """Returns a generic or personalized greeting."""
     if name is not None:
         # return f'<h1 style="color:red">Hello, {name}!</h1><p style="color:blue">I am also excited to learn Flask.</p>'
         return render_template("hello.html", username=name)
@@ -29,6 +31,7 @@ def hello(name=None):
 @app.route("/square")
 @app.route("/square/<number>")
 def square(number=None):
+    """Returns the square of the given number."""
     if number is not None:
         try:
             return str(float(number) ** 2)
@@ -44,18 +47,20 @@ def square(number=None):
 
 @app.route("/weather/<city>")
 def weather(city=None):
-    """"""
+    """Returns the current temperature in the given city."""
     temp = get_temp(city)
     return f"{temp}°C"
 
 
 @app.get("/weather")
 def get_weather():
+    """Displays a form for the user to input a city name."""
     return render_template("weather-form.html")
 
 
 @app.post("/weather")
 def post_weather():
+    """Displays the current temperature in the city provided by the user after submitting the form."""
     city_name = request.form["city"]
     result = get_temp(city_name)
     return render_template("weather-result.html", temp=result, city=city_name.title())
