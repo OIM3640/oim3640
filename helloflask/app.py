@@ -1,5 +1,5 @@
 import weather
-from flask import Flask, render_template, request
+from flask import Flask, redirect, render_template, request
 
 app = Flask(__name__)
 
@@ -53,7 +53,7 @@ Weather API + Form
 
 
 @app.route("/weather/<city>")
-def weather(city=None):
+def show_weather(city=None):
     """Returns the current temperature in the given city."""
     temp = weather.get_temp(city)
     return f"{temp}°C"
@@ -74,6 +74,39 @@ def post_weather():
 
 
 """
+Course Registration Example
+"""
+STUDENTS = {}  # registration information, e.g. {'Zhi': 'Python'}
+COURSES = ['Excel', 'Web', 'Tax', 'AI']
+
+
+@app.get("/register/")
+def show_registeration_form():
+    """Show the registration form."""
+    return render_template("register-form.html", courses=COURSES)
+
+
+@app.post("/register/")
+def register_course():
+    """Register a student for a course."""
+    # Validate
+    name = request.form.get("fullname")
+    course = request.form.get("course")
+    if course not in COURSES:
+        return 'Get out of here, hacker!'
+    STUDENTS[name] = course
+    # return "Successfully registered!"
+    # return render_template("enrollments.html", students=STUDENTS)
+    return redirect('/enrollments/')
+
+
+@app.route("/enrollments/")
+def show_enrollments():
+    """Show all the enrollments"""
+    return render_template("enrollments.html", students=STUDENTS)
+
+
+"""
 404
 """
 
@@ -82,33 +115,6 @@ def post_weather():
 def page_not_found(e):
     """Return a custom 404 error."""
     return render_template("404.html")
-
-
-"""
-Course Registration Example
-"""
-STUDENTS = {}  # registration information, e.g. {'Zhi': 'Python'}
-
-
-@app.get("/register")
-def show_registeration_form():
-    """Show the registration form."""
-    return render_template("register-form.html")
-
-
-@app.post("/register")
-def register_course():
-    """Register a student for a course."""
-    name = request.form.get("fullname")
-    course = request.form.get("course")
-    STUDENTS[name] = course
-    return "Successfully registered!"
-
-
-@app.route("/enrollments")
-def show_enrollments():
-    """Show all the enrollments"""
-    return render_template("enrollments.html", students=STUDENTS)
 
 
 if __name__ == "__main__":
