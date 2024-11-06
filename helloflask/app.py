@@ -24,7 +24,9 @@ def hello(name=None):
     return "Hello world!"
 
 
-# Task: Create a new route /square/<number> that calculates and displays the square of <number> when the user visits this URL. If <number> is not provided or is invalid, display an appropriate message.
+"""
+Task: Create a new route /square/<number> that calculates and displays the square of <number> when the user visits this URL. If <number> is not provided or is invalid, display an appropriate message.
+"""
 
 
 # Example: Visiting http://www.xyz.com/square/3 will return '9.0'.
@@ -78,7 +80,35 @@ def post_weather():
 
 @app.errorhandler(404)
 def page_not_found(e):
+    """Return a custom 404 error."""
     return render_template("404.html")
+
+
+"""
+Course Registration Example
+"""
+STUDENTS = {}  # {name: course}
+
+
+@app.get("/register")
+def show_register_form():
+    """Show the registration form."""
+    return render_template("register-form.html")
+
+
+@app.post("/register")
+def register_course():
+    """Register a student for a course."""
+    name = request.form.get("fullname")
+    course = request.form.get("course")
+    STUDENTS[name] = course
+    return "Successfully registered!"
+
+
+@app.route("/enrollments")
+def show_enrollments():
+    """Show all the enrollments"""
+    return render_template("enrollments.html", students=STUDENTS)
 
 
 if __name__ == "__main__":
