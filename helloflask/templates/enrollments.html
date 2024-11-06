@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enrollments</title>
+  </head>
+  <body>
+    <h1>Enrollments</h1>
+    <div>
+      <!-- Jinja2 template -->
+      {% for name in students %}
+      <p>{{ name }}: {{ students[name] }}</p>
+      {% endfor %}
+    </div>
+
+    <!-- <div>
+      {% for name, courses in students.items() %}
+      <h2>{{ name }}</h2>
+      <ul>
+        {% for course in courses %}
+        <li>{{ course }}</li>
+        {% endfor %}
+      </ul>
+    </div> -->
+  </body>
+</html>
