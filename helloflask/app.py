@@ -45,6 +45,11 @@ def square(number=None):
 # Example: '/weather/Wellesley' could return current weather details for Wellesley.
 
 
+"""
+Weather API + Form
+"""
+
+
 @app.route("/weather/<city>")
 def weather(city=None):
     """Returns the current temperature in the given city."""
@@ -64,6 +69,16 @@ def post_weather():
     city_name = request.form["city"]
     result = weather.get_temp(city_name)
     return render_template("weather-result.html", temp=result, city=city_name.title())
+
+
+"""
+404
+"""
+
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template("404.html")
 
 
 if __name__ == "__main__":
