@@ -87,11 +87,11 @@ def page_not_found(e):
 """
 Course Registration Example
 """
-STUDENTS = {}  # {name: course}
+STUDENTS = {}  # registration information, e.g. {'Zhi': 'Python'}
 
 
 @app.get("/register")
-def show_register_form():
+def show_registeration_form():
     """Show the registration form."""
     return render_template("register-form.html")
 
