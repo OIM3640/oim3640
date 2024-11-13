@@ -1,7 +1,12 @@
+import os
+from dotenv import load_dotenv
 import weather
 from flask import Flask, redirect, render_template, request
 
 app = Flask(__name__)
+
+
+load_dotenv()
 
 
 # Root URL ('/') displays the homepage message.
@@ -77,7 +82,7 @@ def post_weather():
 Course Registration Example
 """
 STUDENTS = {}  # registration information, e.g. {'Zhi': 'Python'}
-COURSES = ['Excel', 'Web', 'Tax', 'AI']
+COURSES = ["Excel", "Web", "Tax", "AI"]
 
 
 @app.get("/register/")
@@ -93,11 +98,11 @@ def register_course():
     name = request.form.get("fullname")
     course = request.form.get("course")
     if course not in COURSES:
-        return 'Get out of here, hacker!'
+        return "Get out of here, hacker!"
     STUDENTS[name] = course
     # return "Successfully registered!"
     # return render_template("enrollments.html", students=STUDENTS)
-    return redirect('/enrollments/')
+    return redirect("/enrollments/")
 
 
 @app.route("/enrollments/")
@@ -115,6 +120,28 @@ def show_enrollments():
 def page_not_found(e):
     """Return a custom 404 error."""
     return render_template("404.html")
+
+
+"""
+After MBTA project
+"""
+
+
+@app.route("/map/")
+def show_map():
+    MAPBOX_ACCESS_TOKEN = os.getenv("MAPBOX_ACCESS_TOKEN")
+
+    lat, lng = 42.298022697548475, -71.26653426988861
+
+    zoom = 16
+    width = 600
+    height = 400
+
+    mapbox_url = f"https://api.mapbox.com/styles/v1/mapbox/streets-v12/static/{lng},{lat},{zoom}/{width}x{height}?access_token={MAPBOX_ACCESS_TOKEN}"
+
+    return (
+        f'<img src="{mapbox_url}" width="{width}" height="{height}" alt="Mapbox Map">'
+    )
 
 
 if __name__ == "__main__":
