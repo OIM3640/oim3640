@@ -127,7 +127,7 @@ for article in recent_news:
     text = (article["title"] + " " + (article["description"] or "")).lower()
     date = article["published_at"][
         :10
-    ]  # Needed to Extract 10 characters for the date format YYYY-MM-DD
+    ]  # Needed to Extract 10 characters to respect the date format YYYY-MM-DD
 
     for word, _ in top_words:
         if word in text:
