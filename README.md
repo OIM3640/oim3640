@@ -10,3 +10,4 @@ This is the course repository for OIM3640.
 # Instructor
 
 - **Name**: Zhi Li
+- **Email**: zli@babson.edu
