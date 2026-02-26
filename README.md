@@ -11,3 +11,8 @@ This is the course repository for OIM3640.
 
 - **Name**: Zhi Li
 - **Email**: zli@babson.edu
+
+# My Projects
+
+- [First Project](./projects/project-1) # for project folder in the same repo
+- [Second Project](https://github.com/username/project-2) # for project in a different repo
