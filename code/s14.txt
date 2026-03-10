@@ -1,0 +1,143 @@
+>>> s = 'python'
+>>> lst = ['python', 'javascript', 'r', 'cplusplus']
+>>> s + ' languange'
+>>> lst + 'c#'
+>>> lst + ['c#']
+>>> s
+>>> lst
+>>> s * 3
+>>> lst * 3
+>>> print(s)
+>>> print(lst)
+>>> s[:3]
+>>> lst[:3]
+>>> s
+>>> lst
+>>> for lang in lst:
+...     if 'c' in lang:
+...         print(lang)
+...
+>>> len(s)
+>>> len(lst)
+>>> s
+>>> lst
+>>> 't' in s
+>>> 't' in lst
+>>> 'r' in lst
+>>> 'python' in lst
+>>> s[:3]
+>>> s + ' language'
+>>> s
+>>> s += ' language'
+>>> s
+>>> lst.append('c#')
+>>> lst
+>>> lst
+>>> sorted(lst)
+>>> lst
+>>> sorted_lst = sorted(lst)
+>>> sorted_lst
+>>> lst.sort()
+>>> lst
+>>> s
+>>> sorted(s)
+>>> ''.join(sorted(s))
+>>> s
+>>> lst = ['python', 'javascript', 'r', 'cplusplus']
+>>> lst.append('c#')
+>>> lst
+>>> lst.sort(reversed=True)
+>>> lst
+>>> lst.sort(reverse=True)
+>>> lst
+>>> scores = [60, 90, 80, 70]
+>>> sorted(scores)
+>>> sorted(scores, reverse=True)
+>>> s
+>>> a = s
+>>> id(s), id(a)
+>>> s = 'python'
+>>> a
+>>> id(s), id(a)
+>>> lst
+>>> languages = lst
+>>> id(lst), id(languages)
+>>> lst.append('c')
+>>> lst
+>>> languages
+>>> ls
+>>> lst
+>>> def f(s):
+...     s.append('rust')
+...     return s
+...
+>>> f(lst)
+>>> lst
+>>> eng2sp = {'one': 'uno', 'two': 'dos', 'three': 'tres'}
+>>> eng2sp['one']
+>>> eng2sp['four'] = 'cuatro'
+>>> eng2sp
+>>> eng2sp['four'] = 'quatro'
+>>> eng2sp
+>>> len(eng2sp)
+>>> 'four' in eng2sp
+>>> 'five' in eng2sp
+>>> eng2sp
+>>> for word in eng2sp:
+...     print(word)
+...
+>>> eng2sp
+>>> for k in eng2sp:
+...     print(k)
+...
+>>> for eng in eng2sp:
+...     sp = eng2sp[eng]
+...     if sp == 'dos':
+...         print(eng)
+...
+>>> prices = {}
+... prices['AAPL'] = 178.50
+... prices['GOOG'] = 141.80
+... prices['MSFT'] = 415.20
+...
+>>> prices
+>>> prices['MSFT']
+>>> prices['MSFT'] = 405.63
+>>> prices
+>>> len(prices)
+>>> prices
+>>> prices.keys()
+>>> list(prices.keys())
+>>> len(prices.keys())
+>>> for k in prices.keys():
+...     print(k)
+...
+>>> for v in prices.values():
+...     print(v)
+...
+>>> for k, v in prices.items():
+...     print(k, v)
+...
+>>> print(prices.keys())
+>>> print(prices.values())
+>>> for stock in prices:
+...     print(stock)
+...
+>>> for stock in prices.keys():
+...     print(stock)
+...
+>>> d = {}
+>>> d['b'] = 1
+>>> d
+>>> d['o'] = 1
+>>> d
+>>> d['o'] += 1
+>>> d
+>>> eng2sp
+>>> eng = 'one'
+>>> eng2sp['one']
+>>> eng2sp['two']
+>>> for k in eng2sp:
+...     print(k)
+...     print(eng2sp[k])
+...
