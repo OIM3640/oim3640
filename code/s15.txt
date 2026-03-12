@@ -1,0 +1,133 @@
+   1: >>> d = {'renee': 96, 'aurora': 94, 'amelia': 95}
+   2: >>> len(d)
+3
+   3:
+>>> for name in d:
+...     print(name)
+...
+   4:
+>>> for name in d.keys():
+...     print(name) # traversal
+...
+   5:
+>>> for grade in d.values():
+...     print(grade)
+...
+   6:
+>>> for name, grade in d.items():
+...     print(name, grade)
+...
+   7: >>> names = list(d.keys())
+   8: >>> names
+['renee', 'aurora', 'amelia']
+   9:
+>>> for i in range(len(names)):
+...     print(i)
+...
+  10:
+>>> for name in names:
+...     print(name)
+...
+  11:
+>>> for i, name in enumerate(names):
+...     print(i, name)
+...
+  12:
+>>> for name, grade in d.items():
+...     print(name, grade)
+...
+  13: >>> prices = {'AAPL': 260.81, 'NVDA': 186.00, 'MSFT': 404.88, 'GOOG': 308.42}
+  14: >>> prices
+{'AAPL': 260.81, 'NVDA': 186.0, 'MSFT': 404.88, 'GOOG': 308.42}
+  15: >>> prices['AAPL']
+260.81
+  16: >>> prices['TSLA']
+  17: >>> prices['TSLA'] = 400.93
+  18: >>> prices
+{'AAPL': 260.81, 'NVDA': 186.0, 'MSFT': 404.88, 'GOOG': 308.42, 'TSLA': 400.93}
+  19: >>> prices
+{'AAPL': 260.81, 'NVDA': 186.0, 'MSFT': 404.88, 'GOOG': 308.42, 'TSLA': 400.93}
+  20: >>> current_max = float('-inf')
+  21: >>> current_max
+-inf
+  22: >>> current_max = 0
+  23:
+>>> for price in prices.values():
+...     if price > current_max:
+...         current_max = price
+...
+  24: >>> current_max
+404.88
+  25: >>> prices
+{'AAPL': 260.81, 'NVDA': 186.0, 'MSFT': 404.88, 'GOOG': 308.42, 'TSLA': 400.93}
+  26:
+>>> def get_expensive_stocks(stocks, p):
+...     pass
+...
+  27: >>> # result = get_expensive_stocks(prices, 200) # ['AAPL', 'MSFT',...]
+  28:
+>>> def get_expensive_stocks(stocks, p):
+...     expensive_stocks = []
+...
+  29:
+>>> def get_expensive_stocks(stocks, p):
+...     expensive_stocks = []
+...     for name, price in prices.items():
+...         if price >= 200:
+...             expensive_stocks.append(name)
+...     return expensive_stocks
+...
+  30: >>> result = get_expensive_stocks(prices, 200) # ['AAPL', 'MSFT',...]
+  31: >>> result
+['AAPL', 'MSFT', 'GOOG', 'TSLA']
+  32: >>> prices
+{'AAPL': 260.81, 'NVDA': 186.0, 'MSFT': 404.88, 'GOOG': 308.42, 'TSLA': 400.93}
+  33: >>> # updating all the values in dict
+  34:
+>>> for price in prices.values():
+...     price *= 1.1
+...     print(price)
+...
+  35: >>> prices
+{'AAPL': 260.81, 'NVDA': 186.0, 'MSFT': 404.88, 'GOOG': 308.42, 'TSLA': 400.93}
+  36:
+>>> for stock in prices:
+...     price = prices[stock]
+...     prices[stock] = price * 1.1
+...
+  37: >>> prices
+{'AAPL': 286.891,
+ 'NVDA': 204.60000000000002,
+ 'MSFT': 445.36800000000005,
+ 'GOOG': 339.26200000000006,
+ 'TSLA': 441.023}
+  38: >>> prices
+{'AAPL': 286.891,
+ 'NVDA': 204.60000000000002,
+ 'MSFT': 445.36800000000005,
+ 'GOOG': 339.26200000000006,
+ 'TSLA': 441.023}
+  39: >>> prices['META']
+  40: >>> prices.get('META', 0)
+0
+  41: >>> prices.get('META', 'N/A')
+'N/A'
+  42: >>> prices.get('GOOG', 'N/A')
+339.26200000000006
+  43: >>> 'g'+= 2
+  44: >>> d = {letter: n+1 for n, letter in enumerate('abcdefg')}
+  45: >>> d
+{'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': 6, 'g': 7}
+  46: >>> letter = 'k'
+  47: >>> ord('k')
+107
+  48: >>> chr(107)
+'k'
+  49: >>> chr(107+2)
+'m'
+  50: >>> ord('O')
+79
+  51: >>> chr(ord('O') + 2)
+'Q'
+  52: >>> help(ord)
+
