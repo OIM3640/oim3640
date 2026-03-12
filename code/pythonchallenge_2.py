@@ -1222,7 +1222,7 @@ $#_}*!(+([_&%{^&[([%]}*^{{([@+@]@*&@_!]_+([(#&!]]#$$#]@#{_]][_{@]{*))$({%}_![@$]
 #@}&$[[%]_&$+)$!%{(}$^$}*"""
 
 
-# counting
+# TODO: Separate data from code and read data from a file.
 
 
 def histogram(s):
