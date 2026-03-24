@@ -1,0 +1,64 @@
+>>> sum(1, 2, 3)
+>>> sum([1, 2, 3])
+6
+>>> a = 3
+>>> b = 4
+>>> b, a = a, b
+>>> a
+4
+>>> b
+3
+>>> point = (3, 4)
+>>> x, y = point
+>>> x
+3
+>>> y
+4
+>>> point = [3, 4]
+>>> x, y = point
+>>> x
+3
+>>> y
+4
+>>> tel = '123-456-7890'
+>>> a, b, c = tel.split('-')
+>>> c
+'7890'
+>>> *_, ext = tel.split('-')
+>>> ext
+'7890'
+>>> phonebook = ['123-456-3652', '1-235-567-3425']
+>>> for p in phonebook:
+...     *_, last_four = p.split('-')
+...     print(last_four)
+...
+>>> def f(a, b):
+...     return a + b, a - b
+...
+>>> result = f(5, 3)
+>>> result
+(8, 2)
+>>> type(result)
+tuple
+>>> res_1, res_2 = f(5,3) # unpacking
+>>> res_1
+8
+>>> res_2
+2
+>>> prices = {['AAPL', '03/24']: 260}
+>>> prices = {'AAPL (03/24)': 260}
+>>> prices = {('AAPL', '03/24'): 260}
+>>> prices = {('AAPL', '03/24'): 260, ('AAPL', '03/25'): 270, ('AAPL', '03/26'): 280}
+>>> prices[('AAPL', '03/25')]
+270
+>>> stocks = ['AAPL', 'NVDA', 'AAPL', 'GOOG']
+>>> unique_stocks = set(stocks)
+>>> unique_stocks
+{'AAPL', 'GOOG', 'NVDA'}
+>>> unique_stocks.add('META')
+>>> unique_stocks
+{'AAPL', 'GOOG', 'META', 'NVDA'}
+>>> unique_stocks.add('NVDA')
+>>> unique_stocks
+{'AAPL', 'GOOG', 'META', 'NVDA'}
+>>> %history -o -p -f session_history.txt
