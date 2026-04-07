@@ -1,0 +1,8 @@
+A tiny glossary (easy terms)
+- AI model vs. AI agent: Model generates outputs; an agent uses those outputs to perform actions and make decisions.
+- Tool use: The ability to call external apps and APIs as part of the agent’s workflow.
+- Autonomy: Degree to which the agent can act without human input.
+- Human-in-the-loop: Humans review or approve certain actions, often used for safety.
+- Policies and constraints: Rules that guide what the agent is allowed or not allowed to do.
+
+Would you like me to tailor this to your course, industry, or a specific task you’re curious about? If you share the business area (e.g., e-commerce, SaaS, manufacturing, services), I can outline a concrete 1-page plan for a beginner AI agent project and a tiny hands-on exercise you can try.
