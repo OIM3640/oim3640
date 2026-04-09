@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Square Calculator</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        .container { background-color: #f0f0f0; padding: 20px; max-width: 400px; margin: auto; border-radius: 5px; }
+        h1 { color: #333; }
+        .result { font-size: 24px; color: #0066cc; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Square Calculator</h1>
+        <p>Enter a number in the URL to calculate its square:</p>
+        <p><code>/square/&lt;number&gt;</code></p>
+        <div class="result">
+            {% if number is defined %}
+                <p>The square of <strong>{{ number }}</strong> is <strong>{{ square }}</strong></p>
+            {% else %}
+                <p>No number provided</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
