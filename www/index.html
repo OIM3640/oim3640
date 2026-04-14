@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First HTML Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hello World!</h1>
+        <p>Welcome to my first HTML page.</p>
+        <nav>
+            <a href="#text">Text</a> |
+            <a href="#lists">Lists</a> |
+            <a href="#media">Media</a> |
+            <a href="#table">Table</a> |
+            <a href="#form">Form</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="text">
+            <h2>Text Tags</h2>
+            <p>This is a paragraph with <strong>strong text</strong> and <em>emphasized text</em>.</p>
+            <p>You can also use <mark>highlight</mark>, <small>small text</small>, and line breaks.<br>Like this line.</p>
+            <hr>
+            <blockquote cite="https://www.w3.org/">
+                Learning by building is one of the best ways to understand HTML.
+            </blockquote>
+            <p>Inline code: <code>&lt;h1&gt;Title&lt;/h1&gt;</code></p>
+            <pre>
+This is preformatted text.
+Spacing and line breaks are preserved.
+            </pre>
+        </section>
+
+        <section id="lists">
+            <h2>List Tags</h2>
+            <h3>Unordered List</h3>
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Orange</li>
+            </ul>
+
+            <h3>Ordered List</h3>
+            <ol>
+                <li>Open VS Code</li>
+                <li>Create an HTML file</li>
+                <li>Run in browser</li>
+            </ol>
+        </section>
+
+        <section id="media">
+            <h2>Link and Media Tags</h2>
+            <p>
+                Visit
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN HTML Docs</a>
+                to learn more.
+            </p>
+            <figure>
+                <img src="https://placehold.co/320x180" alt="Sample placeholder image" width="320" height="180">
+                <figcaption>A sample image with a caption.</figcaption>
+            </figure>
+        </section>
+
+        <section id="table">
+            <h2>Table Tags</h2>
+            <table border="1">
+                <caption>Weekly Study Plan</caption>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Topic</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>Headings and paragraphs</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>Links and images</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="form">
+            <h2>Form Tags</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input id="name" name="name" type="text" placeholder="Enter your name">
+
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email" placeholder="Enter your email">
+
+                <label for="topic">Favorite topic:</label>
+                <select id="topic" name="topic">
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JavaScript</option>
+                </select>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="3" cols="30"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <details>
+            <summary>Click for one quick tip</summary>
+            <p>Use semantic tags like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code> to organize your page.</p>
+        </details>
+    </main>
+
+    <footer>
+        <p>Made while learning HTML in OIM 3640.</p>
+    </footer>
+</body>
+</html>
